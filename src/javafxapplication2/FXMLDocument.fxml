@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.stage.Stage?>
+<?import javafx.scene.Scene?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="236.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="187.5598602294922" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@horse.png" />
+         </image>
+      </ImageView>      
+      <Label layoutX="176.0" layoutY="183.0" minHeight="16" minWidth="69" text="Kullanıcı Adı:" />
+      <Label layoutX="176.0" layoutY="242.0" text="Şifre:" />
+      
+      
+      <TextField fx:id="uname" layoutX="176.0" layoutY="209.0" />
+      <PasswordField fx:id="pword" layoutX="175.0" layoutY="266.0" />
+      
+      <Button  fx:id="onaylar" layoutX="219.0" layoutY="303.0" mnemonicParsing="false" onAction="#onayla"  prefHeight="25.0" prefWidth="51.0" text="Giriş"/>
+      
+      
+      <Label fx:id="onay" layoutX="208.0" layoutY="345.0" prefHeight="17.0" prefWidth="78.0" />
+    
+    </children>
+</AnchorPane>
