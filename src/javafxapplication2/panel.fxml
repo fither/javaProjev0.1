@@ -1,12 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
    <children>
-      <Label layoutX="263.0" layoutY="183.0" text="PANEL 2" />
-      <Button fx:id="cikis" layoutX="265.0" layoutY="249.0" mnemonicParsing="false" text="Çıkış" />
+      <ScrollPane prefHeight="400.0" prefWidth="300.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="308.0">
+               <children>
+                  <ToggleButton fx:id="Makine1" layoutX="-3.0" mnemonicParsing="false" onAction="#yazdir" prefHeight="32.0" prefWidth="275.0" text="Makine-1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                  <ToggleButton layoutX="1.0" layoutY="49.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-2" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0" />
+                  <ToggleButton layoutX="5.0" layoutY="77.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-3" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="80.0" />
+                  <ToggleButton layoutX="14.0" layoutY="112.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-4" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="115.0" />
+                  <ToggleButton layoutX="14.0" layoutY="147.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-5" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="150.0" />
+                  <ToggleButton layoutX="17.0" layoutY="184.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-6" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="185.0" />
+                  <ToggleButton layoutX="5.0" layoutY="217.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-7" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="220.0" />
+                  <ToggleButton layoutX="45.0" layoutY="249.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-8" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="255.0" />
+                  <ToggleButton layoutX="45.0" layoutY="281.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-9" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="290.0" />
+                  <ToggleButton layoutX="49.0" layoutY="313.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-10" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="325.0" />
+                  <ToggleButton layoutX="45.0" layoutY="345.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="275.0" text="Makine-11" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="360.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TabPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Anlık">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="13.0" layoutY="14.0" prefHeight="35.0" prefWidth="131.0" text="Makine Durumu :" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                        <Label layoutX="13.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" text="Çalışmakta Olduğu Ürün:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="45.0" />
+                        <Label layoutY="82.0" prefHeight="37.0" prefWidth="131.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="85.0" />
+                        <Label layoutX="136.0" layoutY="20.0" prefHeight="37.0" prefWidth="60.0" text="Label" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                        <Label layoutX="161.0" layoutY="60.0" prefHeight="35.0" prefWidth="131.0" text="Label" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0" />
+                        <Label layoutX="14.0" layoutY="87.0" prefHeight="37.0" prefWidth="156.0" text="Çalışan:" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="80.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      
    </children>
 </AnchorPane>
